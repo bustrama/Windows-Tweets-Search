@@ -28,24 +28,30 @@ namespace WindowTweet
             InitializeComponent();
         }
 
+        public static string Base64Encode(string text)
+        {
+            var textBytes = System.Text.Encoding.UTF8.GetBytes(text);
+            return System.Convert.ToBase64String(textBytes);
+        }
+
         public void auth()
         {
             WebClient wc = new WebClient();
+            wc.Headers["Host"] = "api.twitter.com";
             wc.Headers["Content-Type"] = "application/x-www-form-urlencoded;charset=UTF-8";
+            wc.Headers["User-Agent"] = "Windows Tweets Search v1.0";
+            wc.Headers["Content-Length"] = "29";
 
             NameValueCollection auth = new NameValueCollection();
-            auth["Header"] = "POST /oauth2/token HTTP/1.1";
-            auth["userAgent"] = "Windows Tweets Search v1.0";
-            auth["autorization"] = "Basic eHZ6MWV2R ... o4OERSZHlPZw==";
-            auth["contentLength"] = "29";
-            auth["acceptEncoding"] = "gzip";
+            auth["Authorization"] = "Basic " + Base64Encode("F2Ll18JPHROTclBPabbQ:T55syYJQlFYzbDLc2LjKdr3TQJNalvYv9OSINWIBk0");
+            auth["grant_type"] = "client_credentials";
 
-            wc.UploadValues("https://api.twitter"+".com/oauth2/token", "POST", auth);
+            wc.UploadValues("https://api.twitter.com/oauth2/token", "POST", auth);
         }
 
         private void refreshMe(object sender, RoutedEventArgs e)
         {
-            
+            auth();
         }
     }
 }
