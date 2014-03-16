@@ -5,14 +5,32 @@
         Title="MainWindow" Height="350" Width="525">
 
     <StackPanel >
-        <Button x:Name="refresh"
+        <StackPanel Orientation="Horizontal"
+                    Margin="20, 15" >
+            <TextBox x:Name="searchEngine"
+                     Height="30"
+                     Width="120"
+                     Text="Windows"
+                     TextAlignment="Center"
+                     FontSize="18" />
+            <Button x:Name="searchB"
+                    Height="40"
+                    Width="100"
+                    Margin="20, 0"
+                    Content="Search"
+                    FontSize="16"
+                    Click="search" />
+            <Button x:Name="refresh"
                 Content="Refresh Tweets"
                 FontSize="16"
                 Height="40"
                 Width="120"
-                Margin="15"
+                Margin="80,0,0,0"
                 Click="refreshMe" />
-        
+        </StackPanel>
+        <TextBox x:Name="result"
+                   Height="Auto"
+                   Width="Auto" />
     </StackPanel>
 
 </Window>

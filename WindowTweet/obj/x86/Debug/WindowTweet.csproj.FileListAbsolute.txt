@@ -9,5 +9,6 @@ C:\Development\workspace\C#\WindowTweet\WindowTweet\bin\Debug\WindowTweet.exe
 C:\Development\workspace\C#\WindowTweet\WindowTweet\bin\Debug\WindowTweet.pdb
 C:\Development\workspace\C#\WindowTweet\WindowTweet\obj\x86\Debug\WindowTweet.exe
 C:\Development\workspace\C#\WindowTweet\WindowTweet\obj\x86\Debug\WindowTweet.pdb
-C:\Development\workspace\C#\WindowTweet\WindowTweet\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Development\workspace\C#\WindowTweet\WindowTweet\obj\x86\Debug\WindowTweet_MarkupCompile.lref
+C:\Development\workspace\C#\WindowTweet\WindowTweet\obj\x86\Debug\WindowTweet.csprojResolveAssemblyReference.cache
+C:\Development\workspace\C#\WindowTweet\WindowTweet\bin\Debug\WindowTweet.exe.config
