@@ -1,0 +1,13 @@
+C:\Development\workspace\C#\WindowTweet\WindowTweet\obj\x86\Debug\MainWindow.baml
+C:\Development\workspace\C#\WindowTweet\WindowTweet\obj\x86\Debug\MainWindow.g.cs
+C:\Development\workspace\C#\WindowTweet\WindowTweet\obj\x86\Debug\App.g.cs
+C:\Development\workspace\C#\WindowTweet\WindowTweet\obj\x86\Debug\WindowTweet_MarkupCompile.cache
+C:\Development\workspace\C#\WindowTweet\WindowTweet\obj\x86\Debug\WindowTweet.g.resources
+C:\Development\workspace\C#\WindowTweet\WindowTweet\obj\x86\Debug\WindowTweet.Properties.Resources.resources
+C:\Development\workspace\C#\WindowTweet\WindowTweet\obj\x86\Debug\WindowTweet.csproj.GenerateResource.Cache
+C:\Development\workspace\C#\WindowTweet\WindowTweet\bin\Debug\WindowTweet.exe
+C:\Development\workspace\C#\WindowTweet\WindowTweet\bin\Debug\WindowTweet.pdb
+C:\Development\workspace\C#\WindowTweet\WindowTweet\obj\x86\Debug\WindowTweet.exe
+C:\Development\workspace\C#\WindowTweet\WindowTweet\obj\x86\Debug\WindowTweet.pdb
+C:\Development\workspace\C#\WindowTweet\WindowTweet\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Development\workspace\C#\WindowTweet\WindowTweet\obj\x86\Debug\WindowTweet_MarkupCompile.lref
