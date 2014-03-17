@@ -12,3 +12,7 @@ C:\Development\workspace\C#\WindowTweet\WindowTweet\obj\x86\Debug\WindowTweet.pd
 C:\Development\workspace\C#\WindowTweet\WindowTweet\obj\x86\Debug\WindowTweet_MarkupCompile.lref
 C:\Development\workspace\C#\WindowTweet\WindowTweet\obj\x86\Debug\WindowTweet.csprojResolveAssemblyReference.cache
 C:\Development\workspace\C#\WindowTweet\WindowTweet\bin\Debug\WindowTweet.exe.config
+C:\Development\workspace\C#\WindowTweet\WindowTweet\bin\Debug\WindowTweet.exe.manifest
+C:\Development\workspace\C#\WindowTweet\WindowTweet\bin\Debug\WindowTweet.application
+C:\Development\workspace\C#\WindowTweet\WindowTweet\obj\x86\Debug\WindowTweet.exe.manifest
+C:\Development\workspace\C#\WindowTweet\WindowTweet\obj\x86\Debug\WindowTweet.application

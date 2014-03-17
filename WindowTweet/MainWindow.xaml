@@ -1,8 +1,33 @@
 ﻿<Window x:Class="WindowTweet.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        ResizeMode="NoResize"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:local="clr-namespace:WindowTweet"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Search Windows Tweets" Height="500" Width="800" >
+    <Window.Background >
+        <ImageBrush ImageSource="Resources/TwitterApplicationBackground.png" />
+    </Window.Background>
+
+    <Window.Resources>
+        <DataTemplate x:Key="TweetTemplate">
+            <StackPanel Height="60"
+                            Width="642"
+                            Margin="0,5,0,0"
+                            Orientation="Horizontal" >
+                <Image Height="50"
+                           Width="50"
+                           Margin="10,0,0,0"
+                           Source="{Binding Path=userImage}" />
+                <TextBlock MaxHeight="50"
+                               MinHeight="10"
+                               Width="570"
+                               Margin="5,0,0,0"
+                               Text="{Binding Path=userTweet}"
+                               FontSize="13"
+                               TextWrapping="Wrap" />
+            </StackPanel>
+        </DataTemplate>
+    </Window.Resources>
 
     <StackPanel >
         <StackPanel Orientation="Horizontal"
@@ -25,12 +50,16 @@
                 FontSize="16"
                 Height="40"
                 Width="120"
-                Margin="80,0,0,0"
+                Margin="360,0,0,0"
                 Click="refreshMe" />
         </StackPanel>
-        <TextBox x:Name="result"
-                   Height="Auto"
-                   Width="Auto" />
+
+        <StackPanel x:Name="tweetsBox"
+                    Height="380"
+                    Margin="20,0,20,20" >
+            <ListBox Width="740" Height="380" ItemsSource="{Binding}" ItemTemplate="{StaticResource TweetTemplate}" Background="Transparent" BorderBrush="Transparent" />
+        </StackPanel>
+
     </StackPanel>
 
 </Window>
