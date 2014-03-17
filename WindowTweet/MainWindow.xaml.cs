@@ -20,9 +20,6 @@ using System.Collections.ObjectModel;
 
 namespace WindowTweet
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -56,11 +53,10 @@ namespace WindowTweet
             WebClient wc = new WebClient();
             wc.Headers["Authorization"] = "Bearer " + auth();
             JavaScriptSerializer jss = new JavaScriptSerializer();
-            string tweets = wc.DownloadString("https://api.twitter.com/1.1/search/tweets.json?q=" + word);
+            string tweets = wc.DownloadString("https://api.twitter.com/1.1/search/tweets.json?q=" + word + "&f=realtime");
             object[] tweetslist = (jss.DeserializeObject(tweets) as Dictionary<string, object>)["statuses"] as object[];
             foreach (var item in tweetslist)
             {
-                // inside this loop, tweet is json["statuses"][index]
                 var tweet = item as Dictionary<string, object>;
                 yield return new Tweet() { userTweet = tweet["text"].ToString(), userImage = (tweet["user"] as Dictionary<string, object>)["profile_image_url"].ToString() };
             }
@@ -75,7 +71,9 @@ namespace WindowTweet
         private void search(object sender, RoutedEventArgs e)
         {
             string word = searchEngine.Text;
-            tweetsBox.DataContext = search(word);
+            foreach (var tweet in search(word))
+                if (!tweets.Items.Contains(tweet))
+                    tweets.Items.Insert(0,tweet);
         }
     }
 }

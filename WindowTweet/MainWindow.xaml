@@ -57,7 +57,7 @@
         <StackPanel x:Name="tweetsBox"
                     Height="380"
                     Margin="20,0,20,20" >
-            <ListBox Width="740" Height="380" ItemsSource="{Binding}" ItemTemplate="{StaticResource TweetTemplate}" Background="Transparent" BorderBrush="Transparent" />
+            <ListBox x:Name="tweets" Width="740" Height="380" ItemsSource="{Binding}" ItemTemplate="{StaticResource TweetTemplate}" Background="Transparent" BorderBrush="Transparent" />
         </StackPanel>
 
     </StackPanel>
